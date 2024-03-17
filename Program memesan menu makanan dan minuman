@@ -1,0 +1,302 @@
+program Pemesanan_di_Restoran;
+
+var
+  jenisPesanan, pilihan, jumlah, harga, makanan_dan_minuman, totalHarga: integer;
+  nama:String ;
+  nobp:String [10];
+begin
+  nama:='januariswandi rahman';
+  nobp:='2310432028';
+  writeln('nama:=',nama);
+  writeln('nobp:=',nobp);
+  writeln('Jenis Pesanan:');
+  writeln('_________________________');
+  writeln('|1.| Makanan             |');
+  writeln('|2.| Minuman             |');
+  writeln('|3.| Makanan dan Minuman |');
+  writeln('|__|_____________________|');
+
+  write('Pilih jenis pesanan: ');
+  readln(jenisPesanan);
+
+  if jenisPesanan = 1 then
+  begin
+    writeln('Menu Makanan:');
+    writeln('____________________________');
+    writeln('|1.| seblak     |- Rp 10,000|');
+    writeln('|2.| mie pedas  |- Rp 15,000|');
+    writeln('|3.| nasi goreng|- Rp 15,000|');
+    writeln('|__|________________________|');
+
+    write('Pilih nomor menu makanan: ');
+    readln(pilihan);
+    write('Jumlah pesanan: ');
+    readln(jumlah);
+
+    if pilihan = 1 then
+    begin
+      harga := 10000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 15000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 15000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  else if jenisPesanan = 2 then
+  begin
+    writeln('Menu Minuman:');
+    writeln('____________________________');
+    writeln('|1.| teh talue |- Rp 12,000 |');
+    writeln('|2.| jus mangga|- Rp 8,000  |');
+    writeln('|3.| Kopi susu |- Rp 10,000 |');
+    writeln('|__|___________|____________|');
+
+    write('Pilih nomor menu minuman: ');
+    readln(pilihan);
+    write('Jumlah pesanan: ');
+    readln(jumlah);
+
+    if pilihan = 1 then
+    begin
+      harga := 12000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 8000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 10000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  else if jenisPesanan = 3 then
+  begin
+    writeln('Menu Makanan dan minuman:');
+    writeln('______________________________');
+    writeln('|1.| seblak     |- Rp 10,000 |');
+    writeln('|2.| mie pedas  |- Rp 15,000 |');
+    writeln('|3.| nasi goreng|- Rp 15,000 |');
+    writeln('|4.|teh talue   |- Rp 12,000 |');
+    writeln('|5.|jus mangga  |- Rp 8,000  |');
+    writeln('|6.|Kopi susu   |- Rp 10,000 |');
+    writeln('|__|_________________________|');
+    writeln('pilih nomor Menu Makanan dan Minuman:');
+    readln (pilihan );
+    writeln ('jumlah pesanan');
+    readln(jumlah );
+    if pilihan = 1 then
+    begin
+      harga := 10000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 15000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 15000;
+    end
+    
+    else if pilihan = 4 then
+    begin
+      harga := 12000;
+    end
+    else if pilihan = 5 then
+    begin
+      harga := 8000;
+    end
+    else if pilihan = 6 then
+    begin
+      harga := 10000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  
+    // Tampilkan menu makanan dan minuman sesuai kebutuhan
+    // ...
+
+    // Proses pemesanan makanan dan minuman
+    // ...
+  end.
+  
+  
+    
+
+program Pemesanan_di_Restoran;
+
+var
+  jenisPesanan, pilihan, jumlah, harga, makanan_dan_minuman, totalHarga: integer;
+  nama:String ;
+  nobp:String [10];
+begin
+  nama:='januariswandi rahman';
+  nobp:='2310432028';
+  writeln('nama:=',nama);
+  writeln('nobp:=',nobp);
+  writeln('Jenis Pesanan:');
+  writeln('_________________________');
+  writeln('|1.| Makanan             |');
+  writeln('|2.| Minuman             |');
+  writeln('|3.| Makanan dan Minuman |');
+  writeln('|__|_____________________|');
+
+  write('Pilih jenis pesanan: ');
+  readln(jenisPesanan);
+
+  if jenisPesanan = 1 then
+  begin
+    writeln('Menu Makanan:');
+    writeln('____________________________');
+    writeln('|1.| seblak     |- Rp 10,000|');
+    writeln('|2.| mie pedas  |- Rp 15,000|');
+    writeln('|3.| nasi goreng|- Rp 15,000|');
+    writeln('|__|________________________|');
+
+    write('Pilih nomor menu makanan: ');
+    readln(pilihan);
+    write('Jumlah pesanan: ');
+    readln(jumlah);
+
+    if pilihan = 1 then
+    begin
+      harga := 10000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 15000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 15000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  else if jenisPesanan = 2 then
+  begin
+    writeln('Menu Minuman:');
+    writeln('____________________________');
+    writeln('|1.| teh talue |- Rp 12,000 |');
+    writeln('|2.| jus mangga|- Rp 8,000  |');
+    writeln('|3.| Kopi susu |- Rp 10,000 |');
+    writeln('|__|___________|____________|');
+
+    write('Pilih nomor menu minuman: ');
+    readln(pilihan);
+    write('Jumlah pesanan: ');
+    readln(jumlah);
+
+    if pilihan = 1 then
+    begin
+      harga := 12000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 8000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 10000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  else if jenisPesanan = 3 then
+  begin
+    writeln('Menu Makanan dan minuman:');
+    writeln('______________________________');
+    writeln('|1.| seblak     |- Rp 10,000 |');
+    writeln('|2.| mie pedas  |- Rp 15,000 |');
+    writeln('|3.| nasi goreng|- Rp 15,000 |');
+    writeln('|4.|teh talue   |- Rp 12,000 |');
+    writeln('|5.|jus mangga  |- Rp 8,000  |');
+    writeln('|6.|Kopi susu   |- Rp 10,000 |');
+    writeln('|__|_________________________|');
+    writeln('pilih nomor Menu Makanan dan Minuman:');
+    readln (pilihan );
+    writeln ('jumlah pesanan');
+    readln(jumlah );
+    if pilihan = 1 then
+    begin
+      harga := 10000;
+    end
+    else if pilihan = 2 then
+    begin
+      harga := 15000;
+    end
+    else if pilihan = 3 then
+    begin
+      harga := 15000;
+    end
+    
+    else if pilihan = 4 then
+    begin
+      harga := 12000;
+    end
+    else if pilihan = 5 then
+    begin
+      harga := 8000;
+    end
+    else if pilihan = 6 then
+    begin
+      harga := 10000;
+    end
+    else
+    begin
+      writeln('Kode Menu Tidak Valid');
+      exit;
+    end;
+
+    totalHarga := jumlah * harga;
+    writeln('Pesanan: ', pilihan, ', Jumlah: ', jumlah, ', Total Harga: Rp ', totalHarga);
+  end
+  
+    // Tampilkan menu makanan dan minuman sesuai kebutuhan
+    // ...
+
+    // Proses pemesanan makanan dan minuman
+    // ...
+  end.
+  
+  
+    
+
