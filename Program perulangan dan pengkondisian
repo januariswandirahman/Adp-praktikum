@@ -1,0 +1,43 @@
+print("nama: januariswandi rahman")
+print("nobp2310432028")
+
+# Minta input dari pengguna untuk nilai n
+n = int(input("Masukkan nilai n (1-10): "))
+
+# Tampilkan tabel penjumlahan
+print("Tabel Penjumlahan {}x{}:".format(n, n))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print("{:4}".format(i + j), end="")
+    print()
+
+# Tampilkan tabel perkalian
+print("\nTabel Perkalian {}x{}:".format(n, n))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print("{:4}".format(i * j), end="")
+    print()
+
+
+	print("nama: januariswandi rahman")
+print("nobp2310432028")
+
+# Minta input dari pengguna untuk nilai n
+n = int(input("Masukkan nilai n (1-10): "))
+
+# Tampilkan tabel penjumlahan
+print("Tabel Penjumlahan {}x{}:".format(n, n))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print("{:4}".format(i + j), end="")
+    print()
+
+# Tampilkan tabel perkalian
+print("\nTabel Perkalian {}x{}:".format(n, n))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print("{:4}".format(i * j), end="")
+    print()
+
+
+	
