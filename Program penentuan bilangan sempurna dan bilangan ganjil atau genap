@@ -1,0 +1,47 @@
+def cek_bilangan_sempurna(bilangan):
+    jumlah_faktor = 0
+    for i in range(1, bilangan):
+        if bilangan % i == 0:
+            jumlah_faktor += i
+    return jumlah_faktor == bilangan
+
+def cek_genap_ganjil(bilangan):
+    if bilangan % 2 == 0:
+        return "genap"
+    else:
+        return "ganjil"
+
+bilangan = int(input("Masukkan bilangan bulat positif: "))
+
+if cek_bilangan_sempurna(bilangan):
+    print(bilangan, "adalah bilangan sempurna")
+else:
+    print(bilangan, "bukan bilangan sempurna")
+
+print(bilangan, "adalah bilangan", cek_genap_ganjil(bilangan))
+
+print ("nama januariswandi rahman")
+print ("nobp 2310432028")def cek_bilangan_sempurna(bilangan):
+    jumlah_faktor = 0
+    for i in range(1, bilangan):
+        if bilangan % i == 0:
+            jumlah_faktor += i
+    return jumlah_faktor == bilangan
+
+def cek_genap_ganjil(bilangan):
+    if bilangan % 2 == 0:
+        return "genap"
+    else:
+        return "ganjil"
+
+bilangan = int(input("Masukkan bilangan bulat positif: "))
+
+if cek_bilangan_sempurna(bilangan):
+    print(bilangan, "adalah bilangan sempurna")
+else:
+    print(bilangan, "bukan bilangan sempurna")
+
+print(bilangan, "adalah bilangan", cek_genap_ganjil(bilangan))
+
+print ("nama januariswandi rahman")
+print ("nobp 2310432028")
