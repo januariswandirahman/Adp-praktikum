@@ -1,0 +1,28 @@
+def caesar_cipher(text, shift):
+    encrypted_text = ""
+    for char in text:
+        if char.isalpha():  # Check if character is alphabet
+            shifted = ord(char) + shift
+            if char.islower():  # For lowercase letters
+                if shifted > ord('z'):
+                    shifted -= 26
+            elif char.isupper():  # For uppercase letters
+                if shifted > ord('Z'):
+                    shifted -= 26
+            encrypted_text += chr(shifted)
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+def main():
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    k = int(input("Masukkan nilai k (dari 1 hingga 26): "))
+    if k < 1 or k > 26:
+        print("Nilai k harus antara 1 hingga 26.")
+        return
+    text = input("Masukkan teks yang ingin dienkripsi: ")
+    encrypted_text = caesar_cipher(text, k)
+    print("Hasil enkripsi:", encrypted_text)
+
+if __name__ == "__main__":
+    main()￼Enter
