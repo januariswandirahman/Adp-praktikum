@@ -1,0 +1,22 @@
+def display_jadwal_penerbangan(jadwal_penerbangan):
+    print("jadwal_penerbangan:")
+    print("{:<15} {:<15} {:<15} {:<15}".format("kota_asal", "kota_tujuan", "keberangkatan", "kedatangan"))
+    for jadwal in jadwal_penerbangan:
+        kota_asal, kota_tujuan, waktu_keberangkatan, waktu_kedatangan = jadwal
+        print("{:<15} {:<15} {:<15} {:<15}".format(kota_asal, kota_tujuan, waktu_keberangkatan, waktu_kedatangan))
+
+# Contoh data jadwal penerbangan dalam bentuk array 2D
+jadwal_penerbangan = [
+    ["padang", "jakarta", "06:00", "08:30"],
+    ["Bali", "padang", "10:00", "13:30"],
+    ["padang", "medan", "09:30", "10:10"],
+    ["batam", "padang", "12:00", "13:00"]
+]
+
+# Memanggil fungsi untuk menampilkan jadwal penerbangan
+display_jadwal_penerbangan(jadwal_penerbangan)
+#menampilkan rute tercepat antara dua kota
+print("rute tercepat=")
+print("padang-medan(09:30-10.10")
+
+￼Enter
