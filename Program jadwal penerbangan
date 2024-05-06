@@ -1,0 +1,23 @@
+print("Jadwal Penerbangan")
+print("____________________________________________________________")
+print("| {:<12} | {:<12} | {:<14} | {:<12} |".format("Kota Asal", "Kota Tujuan", "Keberangkatan", "Kedatangan"))
+print("____________________________________________________________")
+
+jadwal=[["Padang", "medan", "06:00", "06:50"],
+        ["Bali", "Padang", "10:00", "13:30"],
+        ["Padang", "jakarta", "09:30", "11:10"],
+        ["Batam", "Padang", "12:00", "13:00"]]
+
+for j in jadwal:
+    print("| {:<12} | {:<12} | {:<14} | {:<12} |".format(j[0], j[1], j[2], j[3]))
+print("____________________________________________________________")
+
+# Rute tercepat
+keberangkatan = [x[2] for x in jadwal]
+rute_tercepat = min(keberangkatan)
+print("Rute Tercepat:")
+print("| {:<14} |".format(rute_tercepat))
+keberangkatan = [x[3] for x in jadwal]
+rute_tercepat = min(keberangkatan)
+print("| {:<14} |".format(rute_tercepat))
+print ("padang -medan(50 menit)")￼Enter
