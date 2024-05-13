@@ -1,0 +1,39 @@
+def tampilkan_jadwal_harian(jadwal_harian):
+    print("Jadwal harian:")
+    print("{:<15} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10}".format("Waktu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"))
+    for harian in jadwal_harian:
+        waktu, senin, selasa, rabu, kamis, jumat, sabtu, minggu = harian
+        print("{:<15} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10}".format(waktu, senin, selasa, rabu, kamis, jumat, sabtu, minggu))
+
+def tambah_jadwal(jadwal_harian, waktu, senin, selasa, rabu, kamis, jumat, sabtu, minggu):
+    jadwal_harian.append([waktu, senin, selasa, rabu, kamis, jumat, sabtu, minggu])
+    print("Jadwal baru pada waktu {} telah ditambahkan.".format(waktu))
+
+def hapus_jadwal(jadwal_harian, waktu):
+    for jadwal in jadwal_harian:
+        if jadwal[0] == waktu:
+            jadwal_harian.remove(jadwal)
+            print("Jadwal pada waktu {} telah dihapus.".format(waktu))
+            return
+    print("Jadwal pada waktu {} tidak ditemukan.".format(waktu))
+
+# Jadwal harian
+jadwal_harian = [
+    ["07:30-10:00", "nugas", "kuliah", "nyuci", "kuliah", "kuliah", "kegiatan ", "olahraga"],
+    ["10:40-15:00", "kuliah", "kuliah", "nugas", "kuliah", "kuliah", "kegiatan", "nyuci"],
+    ["15:40-18:00", "-", "-", "-", "-", "-", "-", "-"],["19:00-21:00", "nugas", "main", "rapat", "mengaji","mengaji", "-", "-",],["21:30-04:00", "istirahat", "istirahat", "istirahat", "istirahat", "istirahat", "istirahat", "istirahat"],]
+
+# Memanggil fungsi jadwal harian
+tampilkan_jadwal_harian(jadwal_harian)
+
+# Menambah jadwal baru
+tambah_jadwal(jadwal_harian, "15:40-18:00", "Makan", "", "", "membaca", "", "futsal", "")
+
+#  jadwal setelah penambahan
+tampilkan_jadwal_harian(jadwal_harian)
+
+# Menghapus jadwal
+hapus_jadwal(jadwal_harian, "10:40-15:00")
+
+#  jadwal setelah penghapusan
+tampilkan_jadwal_harian(jadwal_harian)￼Enter
