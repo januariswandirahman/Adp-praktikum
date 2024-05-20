@@ -1,0 +1,55 @@
+pasien1 = {
+    'nama': 'budi',
+    'umur': 20,
+    'jenis_kelamin': 'laki_laki',
+    'golongan_darah': 'A',
+    'riwayat_penyakit': 'mag',
+    'daftar_obat': ['paracetamol']
+}
+
+pasien2 = {
+    'nama': 'ahmad',
+    'umur': 25,
+    'jenis_kelamin': 'laki_laki',
+    'golongan_darah': 'O',
+    'riwayat_penyakit': 'Tbc',
+    'daftar_obat': ['amoxilin']
+}
+
+pasien3 = {
+    'nama': 'ani',
+    'umur': 23,
+    'jenis_kelamin': 'perempuan',
+    'golongan_darah': 'AB',
+    'riwayat_penyakit': 'diare',
+    'daftar_obat': ['entrostop']
+}
+
+daftar_pasien = [pasien1, pasien2, pasien3]
+
+# Menampilkan informasi pasien
+for pasien in daftar_pasien:
+    print("Informasi Pasien:")
+    for key, value in pasien.items():
+        if key == 'daftar_obat':
+            print(f"{key}: {', '.join(value)}")
+        else:
+            print(f"{key}: {value}")
+    print()
+
+# Penambahan data pasien
+pasien1['alamat'] = 'padang'
+pasien2['hobi'] = 'begadang'
+
+# Penghapusan data pasien
+del pasien3['golongan_darah']
+
+# Data akhir
+for pasien in daftar_pasien:
+    print('Informasi Pasien:')
+    for key, value in pasien.items():
+        if key == 'daftar_obat':
+            print(f"{key}: {', '.join(value)}")
+        else:
+            print(f"{key}: {value}")
+    print()￼Enter
