@@ -1,0 +1,13 @@
+import os
+os.system('clear')
+from termcolor import colored, cprint
+for i in range(5):
+    cprint(" "*40, "yellow", "on_red")
+    
+#
+import os
+from termcolor import colored, cprint
+
+for i in range(5):
+    cprint(" "*40, "yellow", "on_white")
+        ￼Enter
